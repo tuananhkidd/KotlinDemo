@@ -1,7 +1,7 @@
 package com.example.kotlinapplication
 
 class Test {
-    private var name: String? = "123"
+    private var name: String? = ""
 
     fun getName(): String {
         return name!!
