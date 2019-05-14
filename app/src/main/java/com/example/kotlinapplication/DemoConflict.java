@@ -1,5 +1,6 @@
 package com.example.kotlinapplication;
 
 public class DemoConflict {
-    private int a = 0;
+    private long a = 3274628364L;
+    private long b = 3274628364L;
 }
