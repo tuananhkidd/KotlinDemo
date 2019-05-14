@@ -1,14 +1,14 @@
 package com.example.kotlinapplication
 
 class Test {
-    private var name: String? = ""
+    private var name1: String? = "42342342"
 
     fun getName(): String {
-        return name!!
+        return name1!!
     }
 
     constructor(name: String) {
-        this.name = name
+        this.name1 = name
     }
 
 }
