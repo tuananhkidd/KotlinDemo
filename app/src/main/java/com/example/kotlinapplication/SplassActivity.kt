@@ -2,14 +2,13 @@ package com.example.kotlinapplication
 
 import android.Manifest
 import android.app.Activity
+import android.app.Dialog
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.net.Uri
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
+import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_splass.*
 
@@ -23,6 +22,23 @@ class SplassActivity : AppCompatActivity(), ImageAdapter.OnClickAddItem {
         uris.add(null)
         imageAdapter = ImageAdapter(this, uris, this)
         rcv_test.adapter = imageAdapter
+
+        btn_show.setOnClickListener {
+            showDialog()
+        }
+    }
+
+    private fun showDialog() {
+        val dialog = Dialog(this)
+//        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setContentView(R.layout.layout_dialog_test)
+        dialog.setCancelable(true)
+//        val params = dialog.window!!.attributes
+//        params.width = ViewGroup.LayoutParams.MATCH_PARENT
+//        params.height = ViewGroup.LayoutParams.WRAP_CONTENT
+//        dialog.window!!.attributes = params as android.view.WindowManager.LayoutParams
+        dialog.show()
+
     }
 
     override fun onClickAddButton() {
