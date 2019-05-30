@@ -124,8 +124,6 @@ class CustomDialog {
     }
 
     companion object {
-
-        var b = "46646a756"
         private var isShown = false
 
         private fun forceShown() {

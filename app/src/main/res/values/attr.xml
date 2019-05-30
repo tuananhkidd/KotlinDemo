@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="DialogRow">
-        <attr name="dr_title" format="string" />
-        <attr name="dr_detail" format="string" />
+        <attr name="dr_title" format="string"/>
+        <attr name="dr_detail" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="UnderlineText">
+        <attr name="ut_title" format="string"/>
+        <attr name="ut_detail" format="string"/>
+        <attr name="ut_color_title" format="integer"/>
+        <attr name="ut_color_detail" format="integer"/>
+        <attr name="ut_visible_detail" format="boolean"/>
     </declare-styleable>
 </resources>
