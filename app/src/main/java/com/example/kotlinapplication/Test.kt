@@ -1,8 +1,8 @@
 package com.example.kotlinapplication
 
 class Test {
-    private var name: String? = "huhu"
-    private var ahehe:String? = "1111111"
+    private var name: String? = "huhu 12 3 4"
+    private var ahehe123:String? = "1111111"
 
     fun getName(): String {
         return name!!
